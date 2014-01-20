@@ -865,11 +865,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <vertex x="0.4186" y="-1.0105"/>
 </polygon>
 </package>
-<package name="CREATIVE_COMMONS">
-<text x="-20.32" y="5.08" size="1.778" layer="27">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="27">http://creativecommons.org/licenses/by-sa/3.0</text>
-<text x="11.43" y="0" size="1.778" layer="27">Designed by:</text>
-</package>
 <package name="FIDUCIAL-1.5X3">
 <circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
 <smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
@@ -4490,11 +4485,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <vertex x="0.6834" y="-1.65"/>
 </polygon>
 </symbol>
-<symbol name="CREATIVE_COMMONS">
-<text x="0" y="5.08" size="1.778" layer="95">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="95">http://creativecommons.org/licenses/by-sa/3.0</text>
-<text x="0" y="0" size="1.778" layer="95">Design by:</text>
-</symbol>
 <symbol name="FIDUCIAL">
 <wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
@@ -4870,18 +4860,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </device>
 </devices>
 </deviceset>
-<deviceset name="CREATIVE_COMMONS">
-<gates>
-<gate name="G$1" symbol="CREATIVE_COMMONS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CREATIVE_COMMONS">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FIDUCIAL" prefix="JP">
 <description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
 Various fiducial points for machine vision alignment.</description>
@@ -5159,7 +5137,6 @@ Standard 8.5x11 US Letter frame</description>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="JP1" library="SparkFun" deviceset="M06" device="SIP"/>
 <part name="U$2" library="SparkFun" deviceset="OSHW-LOGO" device="S"/>
-<part name="U$5" library="SparkFun" deviceset="CREATIVE_COMMONS" device=""/>
 <part name="JP2" library="SparkFun" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="JP5" library="SparkFun" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 </parts>
@@ -5167,7 +5144,6 @@ Standard 8.5x11 US Letter frame</description>
 <sheet>
 <plain>
 <text x="104.14" y="177.8" size="1.778" layer="91">Vsupply = 2.3 - 5.5Vdc</text>
-<text x="43.18" y="5.08" size="1.778" layer="95">Joel Bartlett</text>
 <text x="238.76" y="7.62" size="2.54" layer="94">v11</text>
 <text x="165.354" y="11.176" size="2.54" layer="94">Joel Bartlett</text>
 <text x="148.59" y="7.112" size="2.54" layer="94">Revised by: Patrick Alberts</text>
@@ -5190,7 +5166,6 @@ Standard 8.5x11 US Letter frame</description>
 <instance part="P+3" gate="1" x="152.4" y="121.92"/>
 <instance part="JP1" gate="G$1" x="215.9" y="101.6" rot="R180"/>
 <instance part="U$2" gate="G$1" x="132.08" y="12.7"/>
-<instance part="U$5" gate="G$1" x="30.48" y="5.08"/>
 <instance part="JP2" gate="G$1" x="238.76" y="33.02"/>
 <instance part="JP5" gate="G$1" x="243.84" y="33.02"/>
 </instances>
@@ -5225,8 +5200,8 @@ Standard 8.5x11 US Letter frame</description>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="6"/>
-<wire x1="210.82" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
-<label x="198.12" y="93.98" size="1.778" layer="95"/>
+<wire x1="210.82" y1="93.98" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
+<label x="208.28" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5251,9 +5226,9 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="152.4" y1="121.92" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="210.82" y1="96.52" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
-<label x="198.12" y="96.52" size="1.778" layer="95"/>
+<wire x1="210.82" y1="96.52" x2="208.28" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="5"/>
+<label x="208.28" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -5265,9 +5240,9 @@ Standard 8.5x11 US Letter frame</description>
 <label x="134.62" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="210.82" y1="104.14" x2="198.12" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="104.14" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<label x="198.12" y="104.14" size="1.778" layer="95"/>
+<label x="208.28" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -5280,32 +5255,32 @@ Standard 8.5x11 US Letter frame</description>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="106.68" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
-<label x="198.12" y="106.68" size="1.778" layer="95"/>
+<wire x1="210.82" y1="106.68" x2="208.28" y2="106.68" width="0.1524" layer="91"/>
+<label x="208.28" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AL_L" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="AL_L"/>
-<wire x1="132.08" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
-<label x="134.62" y="96.52" size="1.778" layer="95"/>
+<wire x1="132.08" y1="96.52" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
+<label x="134.62" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="210.82" y1="101.6" x2="198.12" y2="101.6" width="0.1524" layer="91"/>
-<label x="198.12" y="101.6" size="1.778" layer="95"/>
+<wire x1="210.82" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
+<label x="208.28" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AL_H" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="AL_H"/>
-<wire x1="132.08" y1="91.44" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
-<label x="134.62" y="91.44" size="1.778" layer="95"/>
+<wire x1="132.08" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
+<label x="134.62" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="210.82" y1="99.06" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
-<label x="198.12" y="99.06" size="1.778" layer="95"/>
+<wire x1="210.82" y1="99.06" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
+<label x="208.28" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
